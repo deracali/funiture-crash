@@ -1,0 +1,53 @@
+@mixin respond($breakpoint) {
+  // MEDIA QUERIES MANAGER
+
+  /*
+0 - 600px     Phone
+600 - 900px   Tablet portrait
+900 - 1200px  Tablet landscape
+[1200px  - 1800px] Is where our normal style apply
+1800px + 1 : Big Desktop
+*/
+
+  // @mixin respond-phone {
+  //   @media (max-width: 600px) {
+  //     @content;
+  //   }
+  // }
+
+  /*
+$breakpoint argument choices:
+- Phone
+- tab-port
+- tab-land
+- Big Desktop
+*/
+
+  // 1060px
+  @if ($breakpoint == small-tab-port) {
+    @media only screen and (max-width: 1060px) {
+      @content;
+    }
+  }
+
+  // 1090px
+  @if ($breakpoint == tab-port) {
+    @media only screen and (max-width: 1090px) {
+      @content;
+    }
+  }
+
+  // 1294px
+  @if ($breakpoint == tab-land) {
+    @media only screen and (max-width: 1294px) {
+      @content;
+    }
+  }
+
+  //1550px
+  @if ($breakpoint == big-desktop) {
+    @media only screen and (max-width: 1550px) {
+      @content;
+    }
+  }
+}

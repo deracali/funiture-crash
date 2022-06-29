@@ -1,0 +1,39 @@
+/* testimonial section */
+
+.testimonial__section {
+  margin-bottom: 200px;
+}
+.testimonial__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 120px;
+  background-color: #087f5b;
+  padding: 40px;
+  border-radius: 20px;
+
+  @include respond(small-tab-port) {
+    flex-direction: column;
+  }
+}
+
+.testimonial__container .testim__img__box img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.testimonial__section h2 {
+  @include respond(tab-land) {
+    font-size: 1.6rem;
+    margin-bottom: 1.4rem;
+  }
+}
+
+.testi__text__content {
+  color: #fff;
+  font-size: 20px;
+}
+
+.testim_text i {
+  margin-bottom: 10px;
+}

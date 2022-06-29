@@ -1,0 +1,12 @@
+{
+  "name": "website__funiture__crashcourse",
+  "version": "1.0.0",
+  "description": "Learning SASS",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "sass --watch sass:css",
+    "compile": "sass sass/main.scss:css/style.css"
+  },
+  "author": "deracali",
+  "license": "ISC"
+}

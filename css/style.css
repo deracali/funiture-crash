@@ -1,0 +1,478 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 100px auto 0;
+  width: 80%;
+  /*
+  0 - 600px     Phone
+  600 - 900px   Tablet portrait
+  900 - 1200px  Tablet landscape
+  [1200px  - 1800px] Is where our normal style apply
+  1800px + 1 : Big Desktop
+  */
+  /*
+  $breakpoint argument choices:
+  - Phone
+  - tab-port
+  - tab-land
+  - Big Desktop
+  */
+}
+@media only screen and (max-width: 1090px) {
+  body {
+    margin: 3.7rem;
+  }
+}
+
+.hero__section {
+  margin-bottom: 200px;
+}
+
+.hero__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.hero__container h1 {
+  margin-bottom: 24px;
+  font-size: 54px;
+  /*
+  0 - 600px     Phone
+  600 - 900px   Tablet portrait
+  900 - 1200px  Tablet landscape
+  [1200px  - 1800px] Is where our normal style apply
+  1800px + 1 : Big Desktop
+  */
+  /*
+  $breakpoint argument choices:
+  - Phone
+  - tab-port
+  - tab-land
+  - Big Desktop
+  */
+  /*
+  0 - 600px     Phone
+  600 - 900px   Tablet portrait
+  900 - 1200px  Tablet landscape
+  [1200px  - 1800px] Is where our normal style apply
+  1800px + 1 : Big Desktop
+  */
+  /*
+  $breakpoint argument choices:
+  - Phone
+  - tab-port
+  - tab-land
+  - Big Desktop
+  */
+}
+@media only screen and (max-width: 1550px) {
+  .hero__container h1 {
+    font-size: 45px;
+  }
+}
+@media only screen and (max-width: 1294px) {
+  .hero__container h1 {
+    font-size: 2.4rem;
+  }
+}
+
+.hero__container p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.hero__text__content {
+  width: 50%;
+}
+
+/* transform: translate(10px 10px) are used to push contents around*/
+.hero__container a {
+  text-decoration: none;
+}
+
+.btn {
+  padding: 17px 35px;
+  color: white;
+  background-color: #087f5b;
+  border-radius: 30px;
+}
+
+.img-box {
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 58%;
+}
+
+.hero__container img {
+  width: 450px;
+  height: 450px;
+  object-fit: contain;
+  border-radius: 30px;
+  /* for timing */
+  transition: 0.3s ease-out;
+}
+
+.hero__container img:hover {
+  transform: scale(1.2);
+}
+
+.testim__img__box {
+  width: 100%;
+}
+
+/* about section */
+.about__section {
+  margin-bottom: 200px;
+}
+
+.about__section h2 {
+  font-size: 34px;
+  margin-bottom: 24px;
+}
+
+.about__section h3 {
+  margin-bottom: 10px;
+}
+
+.about__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+  /*
+  0 - 600px     Phone
+  600 - 900px   Tablet portrait
+  900 - 1200px  Tablet landscape
+  [1200px  - 1800px] Is where our normal style apply
+  1800px + 1 : Big Desktop
+  */
+  /*
+  $breakpoint argument choices:
+  - Phone
+  - tab-port
+  - tab-land
+  - Big Desktop
+  */
+}
+@media only screen and (max-width: 1060px) {
+  .about__container {
+    flex-direction: column;
+  }
+}
+
+.about__container p {
+  width: 70%;
+  font-size: 20px;
+  /*
+  0 - 600px     Phone
+  600 - 900px   Tablet portrait
+  900 - 1200px  Tablet landscape
+  [1200px  - 1800px] Is where our normal style apply
+  1800px + 1 : Big Desktop
+  */
+  /*
+  $breakpoint argument choices:
+  - Phone
+  - tab-port
+  - tab-land
+  - Big Desktop
+  */
+}
+@media only screen and (max-width: 1294px) {
+  .about__container p {
+    width: 100%;
+  }
+}
+
+.icon {
+  width: 32px;
+  margin-bottom: 10px;
+  color: #087f5b;
+}
+
+/* Features section */
+.features__section {
+  margin-bottom: 100px;
+}
+
+.features__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /*
+  0 - 600px     Phone
+  600 - 900px   Tablet portrait
+  900 - 1200px  Tablet landscape
+  [1200px  - 1800px] Is where our normal style apply
+  1800px + 1 : Big Desktop
+  */
+  /*
+  $breakpoint argument choices:
+  - Phone
+  - tab-port
+  - tab-land
+  - Big Desktop
+  */
+}
+@media only screen and (max-width: 1060px) {
+  .features__container {
+    flex-direction: column;
+  }
+}
+
+.features__item:hover {
+  border-radius: 13px;
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.07);
+}
+
+.features__section h2 {
+  font-size: 34px;
+  margin-bottom: 40px;
+  transform: skew(-28deg, 0deg);
+  /*
+  0 - 600px     Phone
+  600 - 900px   Tablet portrait
+  900 - 1200px  Tablet landscape
+  [1200px  - 1800px] Is where our normal style apply
+  1800px + 1 : Big Desktop
+  */
+  /*
+  $breakpoint argument choices:
+  - Phone
+  - tab-port
+  - tab-land
+  - Big Desktop
+  */
+}
+@media only screen and (max-width: 1060px) {
+  .features__section h2 {
+    text-align: center;
+  }
+}
+
+.features__container img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 20px;
+  margin-bottom: 24px;
+}
+
+.features__item {
+  /*
+  0 - 600px     Phone
+  600 - 900px   Tablet portrait
+  900 - 1200px  Tablet landscape
+  [1200px  - 1800px] Is where our normal style apply
+  1800px + 1 : Big Desktop
+  */
+  /*
+  $breakpoint argument choices:
+  - Phone
+  - tab-port
+  - tab-land
+  - Big Desktop
+  */
+}
+@media only screen and (max-width: 1060px) {
+  .features__item {
+    margin-bottom: 2rem;
+  }
+}
+
+.features__item:nth-child(2) img {
+  transform: rotate(179deg);
+}
+
+.features__item:last-child img {
+  width: 120px;
+}
+
+/* counting from the last child */
+.features__item:nth-last-child(2) {
+  color: red;
+}
+
+.features__container h3 {
+  margin-bottom: 14px;
+}
+
+.features__container ul {
+  margin: 0 0 15px 20px;
+}
+
+.features__container li {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+
+.features__container .buy {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  gap: 10px;
+  padding-bottom: 20px;
+  transform: translate(10px, 10px);
+}
+
+.features__container .buy a {
+  text-decoration: none;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.hero__section {
+  margin-bottom: 200px;
+}
+
+.hero__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.hero__container h1 {
+  margin-bottom: 24px;
+  font-size: 54px;
+  /*
+  0 - 600px     Phone
+  600 - 900px   Tablet portrait
+  900 - 1200px  Tablet landscape
+  [1200px  - 1800px] Is where our normal style apply
+  1800px + 1 : Big Desktop
+  */
+  /*
+  $breakpoint argument choices:
+  - Phone
+  - tab-port
+  - tab-land
+  - Big Desktop
+  */
+  /*
+  0 - 600px     Phone
+  600 - 900px   Tablet portrait
+  900 - 1200px  Tablet landscape
+  [1200px  - 1800px] Is where our normal style apply
+  1800px + 1 : Big Desktop
+  */
+  /*
+  $breakpoint argument choices:
+  - Phone
+  - tab-port
+  - tab-land
+  - Big Desktop
+  */
+}
+@media only screen and (max-width: 1550px) {
+  .hero__container h1 {
+    font-size: 45px;
+  }
+}
+@media only screen and (max-width: 1294px) {
+  .hero__container h1 {
+    font-size: 2.4rem;
+  }
+}
+
+.hero__container p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.hero__text__content {
+  width: 50%;
+}
+
+/* transform: translate(10px 10px) are used to push contents around*/
+.hero__container a {
+  text-decoration: none;
+}
+
+/* testimonial section */
+.testimonial__section {
+  margin-bottom: 200px;
+}
+
+.testimonial__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 120px;
+  background-color: #087f5b;
+  padding: 40px;
+  border-radius: 20px;
+  /*
+  0 - 600px     Phone
+  600 - 900px   Tablet portrait
+  900 - 1200px  Tablet landscape
+  [1200px  - 1800px] Is where our normal style apply
+  1800px + 1 : Big Desktop
+  */
+  /*
+  $breakpoint argument choices:
+  - Phone
+  - tab-port
+  - tab-land
+  - Big Desktop
+  */
+}
+@media only screen and (max-width: 1060px) {
+  .testimonial__container {
+    flex-direction: column;
+  }
+}
+
+.testimonial__container .testim__img__box img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.testimonial__section h2 {
+  /*
+  0 - 600px     Phone
+  600 - 900px   Tablet portrait
+  900 - 1200px  Tablet landscape
+  [1200px  - 1800px] Is where our normal style apply
+  1800px + 1 : Big Desktop
+  */
+  /*
+  $breakpoint argument choices:
+  - Phone
+  - tab-port
+  - tab-land
+  - Big Desktop
+  */
+}
+@media only screen and (max-width: 1294px) {
+  .testimonial__section h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1.4rem;
+  }
+}
+
+.testi__text__content {
+  color: #fff;
+  font-size: 20px;
+}
+
+.testim_text i {
+  margin-bottom: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,4 +1,6 @@
-*,
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+/* *,
 *::after,
 *::before {
   padding: 0;
@@ -35,9 +37,10 @@ body {
 .hero__text__content {
   width: 50%;
 }
+ */
 
 /* transform: translate(10px 10px) are used to push contents around*/
-
+/*  */
 .img-box {
   width: 50%;
   position: absolute;
@@ -50,6 +53,12 @@ body {
   height: 450px;
   object-fit: contain;
   border-radius: 30px;
+  /* for timing */
+  transition: 0.3s ease-out;
+}
+
+.hero__container img:hover {
+  transform: scale(1.2);
 }
 
 .hero__container a {
@@ -150,6 +159,7 @@ body {
 .features__section h2 {
   font-size: 34px;
   margin-bottom: 40px;
+  transform: skew(-28deg, 0deg);
 }
 
 .features__container img {
@@ -157,6 +167,19 @@ body {
   max-width: 250px;
   border-radius: 20px;
   margin-bottom: 24px;
+}
+
+.features__item:nth-child(2) img {
+  transform: rotate(179deg);
+}
+
+.features__item:last-child img {
+  width: 120px;
+}
+
+/* counting from the last child */
+.features__item:nth-last-child(2) {
+  color: red;
 }
 
 .features__container h3 {
@@ -179,6 +202,7 @@ body {
   margin-left: 10px;
   gap: 10px;
   padding-bottom: 20px;
+  transform: translate(10px, 10px);
 }
 
 .features__container .buy a {
